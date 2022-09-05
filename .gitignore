@@ -1,0 +1,11 @@
+/.idea
+/examples
+vendor
+composer.lock
+composer.phar
+build
+.env
+.venv
+coverage
+.phpunit.result.cache
+.php_cs.cache
