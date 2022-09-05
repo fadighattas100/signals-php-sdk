@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Mapper\\": "src/"
+      "Compredict\\SignalsPhpSdk": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Mapper\\Tests\\": "tests/"
+      "Compredict\\SignalsPhpSdk\\Tests": "tests/"
     }
   },
   "scripts": {
@@ -44,5 +44,12 @@
     "sort-packages": true
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Compredict\\SignalsPhpSdk\\Providers\\SignalsPhpSdkServiceProvider"
+      ]
+    }
+  }
 }
